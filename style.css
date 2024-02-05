@@ -1,0 +1,157 @@
+
+                         
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+outline: none;
+}
+
+body{
+font-family: sans-serif;
+font-size: 16px;
+width: 100px;
+height: 100vh;
+background-color: black;
+} 
+
+
+.container {
+ position: absolute;
+ left: 50%;
+ top:20%;
+ transform: translateX(-50%);
+ width: 100%;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+} 
+ 
+ 
+ .animation-bg{
+    background: linear-gradient(-45deg,red,yellow,rgb(136, 18, 36),  #ed657c, blue);
+   background-size: 200% 200%;
+   
+    }
+   
+
+
+.outer-circle{
+width: 230px;
+height: 230px;
+border-radius: 50%;
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+
+
+.inner-circle{
+width: 210px;
+height: 210px;
+border-radius: 50%;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.text {
+color: white;
+font-size: 23px;
+}
+
+.minute{
+font-size: 43px;
+}
+.sec{
+font-size: 34px;
+}
+.msec{
+font-size:23px;
+}
+
+.button-wrapper{
+width: 250px;
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
+
+}
+.button{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px solid white;
+background-color: black;
+color: white;
+cursor: pointer;
+}
+
+.button:hover{
+background-color:white;
+color: black;
+}
+
+.laps{
+list-style: none;
+color: white;
+height: 250px;
+
+overflow: auto;
+position: relative;
+padding: 30px 0 ;
+margin-top:50px ;
+}
+
+
+.laps::-webkit-scrollbar{
+display: none;
+}
+
+
+.lap-item{
+display:block;
+width: 300px;
+padding: 10px;
+text-align: center;
+border: 1px solid #444;
+border-radius: 50px;
+margin-bottom: 15px;
+}
+
+.number{
+color: #cccccc;
+
+}
+
+.item-stamp{
+display: inline-block;
+margin-left: 25px;
+}
+
+.lap-clear-button{
+display: block;
+position: fixed;
+z-index: 1000;
+bottom: 5px;
+left: 50%;
+transform: translateX(-50%);
+width: 130px;
+padding: 10px 0;
+border-radius: 50px;
+background-color: rgba(255,255,255,0.9);
+border: 1px solid white;
+}
+
+.hidden{
+visibility: hidden;
+
+}
+
